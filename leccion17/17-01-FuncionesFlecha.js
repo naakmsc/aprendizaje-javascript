@@ -22,7 +22,7 @@ console.log(saludar());
 const regresaObjeto = () =>({nombre:"juan",apellido:"Lara"});
 console.log(regresaObjeto());
 
-// const saludoParametro = (sms) => console.log(sms);
+// const saludoParametro = (sms) => console.lolg(sms);
 const saludoParametro = sms => console.log(sms);
 saludoParametro("hello");
 
