@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con Javascript</title>
+    <style>
+        .azul{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecera" class="azul">Ejemplo de DOM con Javascript</h1>
+    <p id="parrafo">Saludos!</p>
+    <p id="parrafo2">Saludo 2!</p>
+    <p class="azul">Otro parrafo mas</p>
+    <p class="azul">Otro parrafito</p>
+
+    <script>
+        //Get Element by Id y innerHTML
+        // let cabecera = document.getElementById("cabecera");
+        // console.log(`Cabecera: ${cabecera.innerHTML}`);
+        // let parrafo = document.getElementById("parrafo");
+        // console.log(`parrafo: ${parrafo.innerHTML}`);
+
+        // parrafo.innerHTML = "Hello";
+        // cabecera.innerHTML = "Cabecera";
+
+        //getElementByTagName
+        // let parrafos = document.getElementsByTagName("p");
+        // console.log("Parrafos: "+parrafos.length);
+        // for(let i = 0; i < parrafos.length;i++){
+        //     console.log("Parrafo "+(i+1)+": "+parrafos[i].innerHTML);
+        // }
+
+        //getElementByClassName
+        // let elementos = document.getElementsByClassName("azul");
+
+        // console.log("Numero de parrafos: "+ elementos.length);
+        // // for(let i =0; i < elementos.length;i++){
+        // //     console.log("Parrafo "+(i+1)+" "+elementos[i].innerHTML);
+        // // }
+        // for(let elemento of elementos){
+        //     console.log(`${elemento.innerHTML}`);
+        // }
+
+        //querySelectorAll
+        let elementos = document.querySelectorAll("p.azul");
+        for(let elemento of elementos){
+            console.log(elemento.innerHTML);
+        }
+    </script>
+</body>
+</html>
