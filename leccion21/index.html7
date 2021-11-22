@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onmousedown, Onmouseup y onclick</title>
+</head>
+<body>
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Onmousedown Onmouseup y onclick</h1>
+
+    <script>
+        function rojo(e){
+            console.log("onmousedown rojo");
+            e.style.color = "red";
+        }
+        function azul(e){
+            console.log("onmouseup azul");
+            e.style.color = "blue"
+        }
+        function verde(e){
+            console.log("onclick verde");
+            e.style.color = "green";
+        }
+    </script>
+</body>
+</html>
